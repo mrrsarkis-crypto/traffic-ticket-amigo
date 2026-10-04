@@ -14,26 +14,26 @@
 
   /* ---------------- Traffic-law facts (California) ---------------- */
   var FACTS = [
-    "In California you can fight most traffic tickets BY MAIL with a Trial by Written Declaration — no court appearance needed.",
-    "A speeding conviction can stay on your California driving record for years — and insurers often raise rates after a moving violation.",
-    "Vehicle Code 22350 — the 'basic speed law' — is one of the most-cited speeding violations in California.",
-    "Red-light camera tickets generally require identifying the driver — unclear photos can sometimes be challenged.",
-    "Traffic school can keep a ticket off your public record — typically once every 18 months.",
-    "A 'fix-it' ticket can often be dismissed for a small fee once you correct the issue and get it signed off.",
-    "California has 400+ vehicle code sections that can earn you a ticket. Yes, really.",
-    "If the citing officer doesn't appear at an in-person trial, judges often dismiss the case — one reason deadlines and appearances matter.",
-    "Missing your court date can add failure-to-appear penalties on top of the original fine.",
-    "Radar readings can be challenged: calibration records, officer training, and traffic conditions all matter.",
-    "A Trial by Written Declaration lets you tell your side in writing — and if you lose, you can usually request a fresh in-person trial.",
-    "Points on your license can trigger a negligent-operator suspension. Every point counts."
+    "En California puedes pelear la mayoría de las multas POR CORREO con una Declaración por Escrito — sin ir a la corte.",
+    "Una condena por exceso de velocidad puede quedarse en tu récord de manejo de California por años — y las aseguradoras suelen subir las tarifas después de una infracción en movimiento.",
+    "El Código Vehicular 22350 — la 'ley básica de velocidad' — es una de las infracciones de velocidad más citadas en California.",
+    "Las multas de cámara de semáforo generalmente requieren identificar al conductor — las fotos poco claras a veces se pueden impugnar.",
+    "La escuela de tráfico puede mantener una multa fuera de tu récord público — típicamente una vez cada 18 meses.",
+    "Una multa de 'arréglalo' muchas veces se puede desestimar por una tarifa pequeña una vez que corriges el problema y lo firmas.",
+    "California tiene más de 400 secciones del código vehicular por las que te pueden multar. Sí, en serio.",
+    "Si el oficial que te multó no se presenta al juicio en persona, los jueces suelen desestimar el caso — por eso importan las fechas límite.",
+    "Faltar a tu fecha de corte puede agregar penalidades por no presentarse además de la multa original.",
+    "Las lecturas del radar se pueden impugnar: los registros de calibración, el entrenamiento del oficial y las condiciones del tráfico importan.",
+    "La Declaración por Escrito te permite contar tu versión por escrito — y si pierdes, usualmente puedes pedir un nuevo juicio en persona.",
+    "Los puntos en tu licencia pueden causar una suspensión por conductor negligente. Cada punto cuenta."
   ];
 
   var STEPS = [
-    "Uploading your ticket securely…",
-    "Reading the fine print…",
-    "Extracting violation details…",
-    "Checking the court info…",
-    "Almost done — polishing results…"
+    "Subiendo tu multa de forma segura…",
+    "Leyendo la letra pequeña…",
+    "Extrayendo los detalles de la infracción…",
+    "Verificando la info de la corte…",
+    "Casi listo — puliendo los resultados…"
   ];
 
   /* ---------------- Styles ---------------- */
@@ -91,13 +91,13 @@
     '<div class="utt-loadcard">' +
       '<div class="utt-road"><div class="utt-car">🚗</div></div>' +
       '<div class="utt-ring"></div>' +
-      '<div class="utt-step" id="uttStep">Uploading your ticket securely…</div>' +
+      '<div class="utt-step" id="uttStep">Subiendo tu multa de forma segura…</div>' +
       '<div class="utt-dots"><i></i><i></i><i></i></div>' +
-      '<div class="utt-factlabel">⚖️ Did you know?</div>' +
+      '<div class="utt-factlabel">⚖️ ¿Sabías que?</div>' +
       '<div class="utt-fact" id="uttFact"></div>' +
       '<div class="utt-factnum" id="uttFactNum"></div>' +
       '<div class="utt-bar"><div></div></div>' +
-      '<div class="utt-note">Your document stays private — encrypted in transit, never shared.</div>' +
+      '<div class="utt-note">Tu documento es privado — cifrado en tránsito, nunca compartido.</div>' +
     '</div>';
   document.body.appendChild(veil);
 
@@ -109,7 +109,7 @@
 
   function showFact(i) {
     factEl.innerHTML = '<span>' + FACTS[i % FACTS.length] + '</span>';
-    factNumEl.textContent = 'Fact ' + ((i % FACTS.length) + 1) + ' of ' + FACTS.length;
+    factNumEl.textContent = 'Dato ' + ((i % FACTS.length) + 1) + ' de ' + FACTS.length;
   }
 
   function show() {

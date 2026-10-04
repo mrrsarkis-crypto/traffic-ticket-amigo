@@ -86,27 +86,27 @@
 
   /* ---------- Knowledge base ---------- */
   var KB = [
-    { k: ['price', 'cost', 'how much', 'fee', '$', 'charge'], r: 'Our flat fees are simple:<br>• <b>$199</b> — Full traffic ticket defense<br>• <b>$149</b> — Trial by Written Declaration prep<br>• <b>$99</b> — Additional citation on an existing case<br><br>No hidden fees, ever. Want me to start your free ticket scan?' },
-    { k: ['how it works', 'how does', 'process', 'steps', 'what happens'], r: 'Here\'s how it works:<br><b>1.</b> Scan your ticket free online<br><b>2.</b> We flag potential issues in your citation<br><b>3.</b> A licensed CA attorney reviews your defense<br><b>4.</b> We prepare and file your TR-205 written declaration<br><br>Most clients never go to court.' },
-    { k: ['scan', 'upload', 'ticket photo', 'picture'], r: 'You can scan your ticket right now — it takes 60 seconds and it\'s free. I\'ll open the scanner for you. <a href="/assistant">Start free scan →</a>' },
-    { k: ['speeding'], r: 'We fight speeding tickets across LA County. Common defenses include radar/lidar calibration issues, pacing errors, and procedural defects on the citation itself. Scan your ticket free and we\'ll flag what we find.' },
-    { k: ['red light', 'red-light', 'camera'], r: 'Red light tickets — including camera tickets — are very beatable. Camera evidence has strict authentication requirements in California. Let us review yours free.' },
-    { k: ['cell phone', 'cellphone', 'texting', 'distracted'], r: 'Cell phone tickets (VC 23123/23123.5) carry a point on your record. Strong defenses exist — mounted phone use, emergency calls, GPS. Worth fighting.' },
-    { k: ['dui'], r: 'We handle DUI-related traffic matters, but DUI is criminal — you need a criminal defense attorney for the criminal side. We can help with the DMV/traffic components. Call us at <a href="tel:+18332931091">(833) 293-1091</a> to discuss.' },
-    { k: ['court', 'appear', 'go to court'], r: 'Most of our clients <b>never go to court</b>. We fight by Trial by Written Declaration (TR-205) — everything is done in writing. If you lose the written trial, you can still request a new in-person trial (trial de novo).' },
-    { k: ['trial by written', 'tr-205', 'written declaration', 'tbd'], r: 'Trial by Written Declaration (form TR-205) lets you fight your ticket entirely by mail — no courtroom. We prepare the full declaration, a licensed attorney reviews it, and we file it for you. $149 for TBD prep, $199 for full defense.' },
-    { k: ['law firm', 'lawyer', 'attorney'], r: 'We\'re a document preparation service — <b>not a law firm</b> — but every defense is reviewed by a licensed California attorney before filing. You get attorney-level review at a flat $199.' },
-    { k: ['van nuys', 'burbank', 'glendale', 'pasadena', 'long beach', 'court location', 'courthouse'], r: 'We serve all LA County courts including Van Nuys, Burbank, Glendale, Pasadena, and Long Beach. Our office is at 7120 Hayvenhurst Ave Ste 320, Van Nuys.' },
-    { k: ['failure to appear', 'fta', 'missed court', 'warrant', 'bench warrant'], r: 'A failure to appear (VC 40508) can put a hold on your license. Don\'t panic — this is fixable. Call us now at <a href="tel:+18332931091">(833) 293-1091</a> and we\'ll map out your options today.' },
-    { k: ['suspended', 'license'], r: 'We help with suspended-license issues tied to traffic tickets. The fix depends on why it was suspended — call <a href="tel:+18332931091">(833) 293-1091</a> for a free assessment.' },
-    { k: ['cdl', 'commercial', 'truck'], r: 'CDL holders can\'t afford points — your livelihood depends on a clean record. We prioritize CDL defenses. Start with a free scan.' },
-    { k: ['insurance', 'point', 'dmv'], r: 'A conviction puts a point on your DMV record and can raise insurance 20-40% for 3 years. Fighting for $199 is often cheaper than paying the ticket.' },
-    { k: ['traffic school'], r: 'Traffic school masks one point but you can only use it once every 18 months, and you still pay the full fine. Fighting the ticket can get it <b>dismissed entirely</b> — no fine, no point, no school.' },
-    { k: ['refund', 'guarantee', 'win'], r: 'We can\'t guarantee outcomes — no honest service can. What we guarantee: a licensed attorney reviews every defense, we file everything correctly and on time, and we fight hard. See our <a href="/refund-policy">refund policy</a>.' },
-    { k: ['human', 'person', 'someone', 'agent', 'real'], r: 'You can reach our team at <a href="tel:+18332931091">(833) 293-1091</a>, Mon–Fri 7:30 AM–7:30 PM, Sat 9:30 AM–2:30 PM. Tap Live chat below or leave your info here and we\'ll call you back.' },
-    { k: ['hello', 'hi', 'hey', 'good morning', 'good afternoon'], r: 'Hi! I\'m the Amigo AI assistant. I can answer questions about fighting traffic tickets, pricing, and how it works — or start your free ticket scan. What\'s on your mind?' },
-    { k: ['thank', 'thanks'], r: 'You\'re welcome! If you\'re ready, start your <a href="/assistant">free ticket scan</a> — it takes 60 seconds.' },
-    { k: ['bye', 'goodbye'], r: 'Good luck with your ticket! Remember — you have a deadline to act, so don\'t wait too long. We\'re here when you\'re ready.' }
+    { k: ['precio', 'costo', 'cuánto', 'cuanto', 'tarifa', 'cargos', '$', 'cuesta', 'vale', 'price', 'cost', 'how much'], r: 'Nuestras tarifas son simples y sin sorpresas:<br>• <b>$199</b> — Defensa completa de tu multa de tráfico<br>• <b>$149</b> — Preparación de Declaración por Escrito (TR-205)<br>• <b>$99</b> — Multa adicional en un caso existente<br><br>Nunca hay cargos ocultos. ¿Quieres que inicie tu escaneo gratis?' },
+    { k: ['cómo funciona', 'como funciona', 'proceso', 'pasos', 'qué pasa', 'que pasa', 'how it works'], r: 'Así funciona:<br><b>1.</b> Escanea tu multa gratis en línea<br><b>2.</b> Detectamos posibles fallas en tu citación<br><b>3.</b> Un abogado con licencia de California revisa tu defensa<br><b>4.</b> Preparamos y presentamos tu declaración TR-205<br><br>La mayoría de nuestros clientes nunca van a la corte.' },
+    { k: ['escanea', 'escanear', 'scan', 'subir', 'foto', 'picture'], r: 'Puedes escanear tu multa ahora mismo — toma 60 segundos y es gratis. Te abro el escáner. <a href="/assistant">Iniciar escaneo gratis →</a>' },
+    { k: ['velocidad', 'exceso de velocidad', 'speeding'], r: 'Peleamos multas por exceso de velocidad en todo el condado de Los Ángeles. Las defensas comunes incluyen problemas de calibración del radar/lidar, errores de medición y defectos en la citación. Escanea tu multa gratis y te diremos lo que encontramos.' },
+    { k: ['semáforo', 'semaforo', 'luz roja', 'cámara', 'camara', 'red light'], r: 'Las multas de semáforo en rojo — incluyendo las de cámara — se pueden ganar. La evidencia de cámara tiene requisitos estrictos de autenticación en California. Déjanos revisar la tuya gratis.' },
+    { k: ['celular', 'teléfono', 'telefono', 'textear', 'distraído', 'distraido', 'cell phone'], r: 'Las multas por usar el celular (VC 23123/23123.5) agregan un punto a tu récord. Hay defensas sólidas — uso con soporte, llamadas de emergencia, GPS. Vale la pena pelearla.' },
+    { k: ['dui', 'borracho', 'alcohol'], r: 'Manejamos asuntos de tráfico relacionados con DUI, pero el DUI es penal — necesitas un abogado de defensa penal para el lado criminal. Podemos ayudar con los componentes del DMV/tráfico. Llámanos al <a href="tel:+18332931091">(833) 293-1091</a> para hablar.' },
+    { k: ['corte', 'juzgado', 'tribunal', 'ir a la corte', 'court'], r: 'La mayoría de nuestros clientes <b>nunca van a la corte</b>. Peleamos por Declaración por Escrito (TR-205) — todo se hace por escrito. Si pierdes el juicio escrito, aún puedes pedir un nuevo juicio en persona.' },
+    { k: ['declaración por escrito', 'declaracion por escrito', 'tr-205', 'por escrito', 'tbd'], r: 'La Declaración por Escrito (formulario TR-205) te permite pelear tu multa completamente por correo — sin sala de juzgado. Preparamos la declaración completa, un abogado con licencia la revisa, y la presentamos por ti. $149 por preparación, $199 por defensa completa.' },
+    { k: ['abogado', 'bufete', 'firma legal', 'law firm', 'lawyer'], r: 'Somos un servicio de preparación de documentos — <b>no un bufete de abogados</b> — pero cada defensa es revisada por un abogado con licencia de California antes de presentarla. Obtienes revisión de nivel de abogado por una tarifa fija de $199.' },
+    { k: ['van nuys', 'burbank', 'glendale', 'pasadena', 'long beach', 'cortes', 'juzgados'], r: 'Servimos todas las cortes del condado de Los Ángeles incluyendo Van Nuys, Burbank, Glendale, Pasadena y Long Beach. Nuestra oficina está en 7120 Hayvenhurst Ave Ste 320, Van Nuys.' },
+    { k: ['no me presenté', 'no me presente', 'no fui a la corte', 'orden de arresto', 'warrant', 'fta', 'failure to appear'], r: 'No presentarse (VC 40508) puede suspender tu licencia. No te asustes — esto tiene solución. Llámanos ahora al <a href="tel:+18332931091">(833) 293-1091</a> y hoy mismo vemos tus opciones.' },
+    { k: ['suspendida', 'suspendido', 'licencia suspendida', 'suspended'], r: 'Ayudamos con problemas de licencia suspendida relacionados con multas de tráfico. La solución depende de por qué se suspendió — llama al <a href="tel:+18332931091">(833) 293-1091</a> para una evaluación gratis.' },
+    { k: ['cdl', 'comercial', 'camión', 'camion', 'trailero'], r: 'Los conductores con CDL no pueden darse el lujo de tener puntos — tu sustento depende de un récord limpio. Priorizamos las defensas de CDL. Empieza con un escaneo gratis.' },
+    { k: ['seguro', 'seguro de auto', 'puntos', 'punto', 'dmv', 'insurance'], r: 'Una condena agrega un punto a tu récord del DMV y puede subir tu seguro 20-40% por 3 años. Pelear por $199 muchas veces sale más barato que pagar la multa.' },
+    { k: ['escuela de tráfico', 'escuela de trafico', 'traffic school'], r: 'La escuela de tráfico oculta un punto pero solo puedes usarla una vez cada 18 meses, e igual pagas la multa completa. Pelear la multa puede lograr que la <b>desestimen por completo</b> — sin multa, sin punto, sin escuela.' },
+    { k: ['reembolso', 'garantía', 'garantia', 'ganar', 'refund', 'guarantee'], r: 'No podemos garantizar resultados — ningún servicio honesto puede. Lo que sí garantizamos: un abogado con licencia revisa cada defensa, presentamos todo correctamente y a tiempo, y peleamos fuerte. Mira nuestra <a href="/refund-policy">política de reembolso</a>.' },
+    { k: ['humano', 'persona', 'alguien', 'agente', 'hablar con', 'human', 'person'], r: 'Puedes comunicarte con nuestro equipo al <a href="tel:+18332931091">(833) 293-1091</a>, lun–vie 7:30 AM–7:30 PM, sáb 9:30 AM–2:30 PM. Toca el chat en vivo abajo o déjanos tu info aquí y te llamamos.' },
+    { k: ['hola', 'buenos días', 'buenos dias', 'buenas tardes', 'buenas noches', 'hey', 'hello'], r: '¡Hola! Soy el asistente AI de Amigo. Puedo responder preguntas sobre cómo pelear multas de tráfico, precios y cómo funciona — o iniciar tu escaneo gratis. ¿En qué te ayudo?' },
+    { k: ['gracias', 'thank'], r: '¡De nada! Si estás listo, inicia tu <a href="/assistant">escaneo gratis</a> — toma 60 segundos.' },
+    { k: ['adiós', 'adios', 'chao', 'nos vemos', 'bye', 'goodbye'], r: '¡Suerte con tu multa! Recuerda — tienes una fecha límite para actuar, así que no esperes mucho. Aquí estamos cuando estés listo.' }
   ];
 
   function answer(q) {
@@ -120,10 +120,10 @@
       if (score > bestScore) { bestScore = score; best = KB[i]; }
     }
     if (best) return best.r;
-    return 'Good question. I can help with pricing, how ticket defense works, courts we serve, and specific violation types. You can also <a href="/assistant">scan your ticket free</a> for a personalized review — or call <a href="tel:+18332931091">(833) 293-1091</a>. What would you like to know?';
+    return 'Buena pregunta. Puedo ayudar con precios, cómo funciona la defensa de multas, las cortes que servimos y tipos específicos de infracciones. También puedes <a href="/assistant">escanear tu multa gratis</a> para una revisión personalizada — o llamar al <a href="tel:+18332931091">(833) 293-1091</a>. ¿Qué te gustaría saber?';
   }
 
-  var QUICK = ['Scan my ticket 🎫', 'Pricing 💰', 'Live chat 💬', 'Email us ✉️'];
+  var QUICK = ['Escanear mi multa 🎫', 'Precios 💰', 'Chat en vivo 💬', 'Email ✉️'];
 
   /* ---------- Build UI ---------- */
   function init() {
@@ -134,7 +134,7 @@
     // Floating bubble
     var bubble = el('button');
     bubble.id = 'uttAIBubble';
-    bubble.setAttribute('aria-label', 'Chat with Amigo AI assistant');
+    bubble.setAttribute('aria-label', 'Chatea con el asistente AI de Amigo');
     bubble.innerHTML = CHAT_SVG + '<span class="utt-ai-badge" style="display:none">1</span>';
     document.body.appendChild(bubble);
 
@@ -142,18 +142,18 @@
     var panel = el('div');
     panel.id = 'uttAIPanel';
     panel.setAttribute('role', 'dialog');
-    panel.setAttribute('aria-label', 'Amigo AI chat');
+    panel.setAttribute('aria-label', 'Chat AI de Amigo');
     panel.innerHTML =
       '<div class="utt-chat-head">' +
         '<div class="utt-chat-avatar">' + BOT_SVG + '</div>' +
-        '<div class="utt-chat-title"><strong>Amigo AI Assistant</strong>' +
-        '<small><span class="utt-chat-status"></span>Online — replies instantly</small></div>' +
-        '<button class="utt-chat-close" aria-label="Close chat">✕</button>' +
+        '<div class="utt-chat-title"><strong>Asistente AI de Amigo</strong>' +
+        '<small><span class="utt-chat-status"></span>En línea — responde al instante</small></div>' +
+        '<button class="utt-chat-close" aria-label="Cerrar chat">✕</button>' +
       '</div>' +
       '<div class="utt-chat-body"></div>' +
       '<div class="utt-chat-foot">' +
-        '<input type="text" placeholder="Ask about your ticket…" aria-label="Type your message" maxlength="500">' +
-        '<button aria-label="Send message">' + SEND_SVG + '</button>' +
+        '<input type="text" placeholder="Pregunta sobre tu multa…" aria-label="Escribe tu mensaje" maxlength="500">' +
+        '<button aria-label="Enviar mensaje">' + SEND_SVG + '</button>' +
       '</div>';
     document.body.appendChild(panel);
 
@@ -199,7 +199,7 @@
         var b = el('button', '', label);
         b.addEventListener('click', function () {
           q.remove();
-          handleUser(label.replace(/[🎫💰⚙️📞]/g, '').trim());
+          handleUser(label.replace(/[🎫💰💬✉️⚙️📞]/g, '').trim());
         });
         q.appendChild(b);
       });
@@ -210,15 +210,15 @@
     function showLeadForm() {
       var wrap = el('div', 'utt-lead');
       wrap.innerHTML =
-        '<h3>Welcome to Amigo AI Chat 👋</h3>' +
+        '<h3>Bienvenido al Chat AI de Amigo 👋</h3>' +
         '<p>Déjame tu nombre y número para dar seguimiento a tu multa. Luego chatea — respondo al instante.</p>' +
-        '<label for="uttLeadName">Name</label>' +
+        '<label for="uttLeadName">Nombre</label>' +
         '<input id="uttLeadName" type="text" placeholder="Tu nombre" autocomplete="name">' +
         '<label for="uttLeadPhone">Teléfono</label>' +
         '<input id="uttLeadPhone" type="tel" placeholder="(818) 555-0123" autocomplete="tel">' +
         '<label class="utt-sms-consent" style="display:flex;gap:8px;align-items:flex-start;margin:10px 0;font-size:.85rem;font-weight:normal;cursor:pointer">' +
         '<input id="uttSmsConsent" type="checkbox" style="margin-top:3px">' +
-        '<span>Sí, envíame mensajes sobre mi multa at this number. Msg & data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.</span></label>' +
+        '<span>Sí, envíame mensajes sobre mi multa a este número. Pueden aplicar tarifas de mensajes y datos. Responde STOP para no recibir más, HELP para ayuda. El consentimiento no es condición de compra.</span></label>' +
         '<button class="utt-start" disabled>Comenzar el chat →</button>';
       body.appendChild(wrap);
       scrollDown();
@@ -256,7 +256,7 @@
         } catch (e) {}
         leadDone = true;
         wrap.remove();
-        botSay('Nice to meet you, ' + lead.name.split(' ')[0] + '! I\'m your Amigo AI assistant. Ask me anything about fighting your traffic ticket — pricing, how it works, your court — or tap below to scan your ticket free.', QUICK);
+        botSay('¡Mucho gusto, ' + lead.name.split(' ')[0] + '! Soy tu asistente AI de Amigo. Pregúntame lo que sea sobre pelear tu multa — precios, cómo funciona, tu corte — o toca abajo para escanear tu multa gratis.', QUICK);
       });
 
       setTimeout(function () { nameI.focus(); }, 400);
@@ -266,12 +266,12 @@
       var t = showTyping();
       setTimeout(function () {
         t.remove();
-        addMsg('Connecting you with our team now… please hold on.', 'bot');
+        addMsg('Te estoy conectando con nuestro equipo… espera un momento.', 'bot');
         var payload = { name: (lead&&lead.name)||"", phone: (lead&&lead.phone)||"", page: location.href, ts: new Date().toISOString(), type: "live_chat_request" };
         try { fetch("/api/live-chat-request", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload), keepalive: true }).catch(function(){}); } catch(e) {}
         try { if (window.gtag) window.gtag("event", "live_chat_request", { event_category: "AI Chat" }); } catch(e2) {}
         var t2 = showTyping();
-        setTimeout(function(){ t2.remove(); addMsg('Your request has been sent. Meanwhile, <a href="/assistant">scan your ticket free</a> to help us help you faster.', 'bot'); }, 2500);
+        setTimeout(function(){ t2.remove(); addMsg('Tu solicitud fue enviada. Mientras tanto, <a href="/assistant">escanea tu multa gratis</a> para ayudarnos a ayudarte más rápido.', 'bot'); }, 2500);
       }, 800);
     }
 
@@ -283,12 +283,12 @@
       setTimeout(function () {
         t.remove();
         var low = text.toLowerCase();
-        if (/live chat/.test(low)) {
+        if (/live chat|chat en vivo/.test(low)) {
           requestLiveChat();
-        } else if (/email/.test(low)) {
-          addMsg('Email us at <a href="mailto:help@trafficticketamigo.com"><b>help@trafficticketamigo.com</b></a> — we reply within one business day.', 'bot');
-        } else if (/scan/.test(low)) {
-          addMsg('Opening the free ticket scanner for you… <a href="/assistant"><b>Tap here to scan →</b></a>', 'bot');
+        } else if (/email|correo/.test(low)) {
+          addMsg('Escríbenos a <a href="mailto:help@trafficticketamigo.com"><b>help@trafficticketamigo.com</b></a> — respondemos en un día hábil.', 'bot');
+        } else if (/scan|escanea|escanear/.test(low)) {
+          addMsg('Abriendo el escáner gratis para ti… <a href="/assistant"><b>Toca aquí para escanear →</b></a>', 'bot');
         } else {
           addMsg(answer(text), 'bot');
         }
@@ -306,7 +306,7 @@
       opened = true;
       if (!body.children.length) {
         if (leadDone) {
-          botSay('Welcome back, ' + (lead.name || 'there').split(' ')[0] + '! What can I help with today?', QUICK);
+          botSay('¡Bienvenido de nuevo, ' + (lead.name || 'amigo').split(' ')[0] + '! ¿En qué te ayudo hoy?', QUICK);
         } else {
           showLeadForm();
         }
