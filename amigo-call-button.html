@@ -1,5 +1,9 @@
 <!-- Traffic Ticket Amigo - Floating Call Button Component
-     Include this before </body> on any page. The amigo flies in,
+     Include this before <script>
+/* Scroll reveal (bulk pass) */
+(function(){var r=document.querySelectorAll('.reveal');if(!r.length)return;if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target)}})},{threshold:.12});r.forEach(function(el){io.observe(el)})}else{r.forEach(function(el){el.classList.add('visible')})}})();
+</script>
+</body> on any page. The amigo flies in,
      hovers with a sparkle trail, and opens the call prompt on tap. -->
 <style>
 .amigo-call-wrap {
@@ -51,6 +55,15 @@
   .amigo-call-wrap { width: 72px; height: 72px; bottom: 18px; right: 18px; }
   .amigo-call-prompt { bottom: 104px; right: 14px; }
 }
+
+/* Swoosh + reveal (bulk pass) */
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:13px;right:13px;bottom:6px;height:2px;background:linear-gradient(90deg,#f59e0b,transparent);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.nav-links a:hover::after{transform:scaleX(1)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.nav-links a::after{display:none}}
+@media(max-width:860px){.nav-links a::after{display:none}}
 </style>
 
 <div class="amigo-call-wrap" id="amigoCallBtn" role="button" aria-label="Talk to the Traffic Ticket Amigo" tabindex="0">
@@ -94,9 +107,9 @@
   <button class="amigo-close" id="amigoClose" aria-label="Close">&times;</button>
   <h4>🧚 Talk to the Amigo</h4>
   <p>Our AI specialist can answer your questions and help with your ticket right now.</p>
-  <a class="amigo-call-btn" href="tel:+18332931091">📞 Call Now</a>
+  <a class="amigo-call-btn" href="tel:+14244506387">📞 Call Now</a>
   <div class="amigo-or">or</div>
-  <a class="amigo-sms" href="sms:+18332931091">💬 Text us instead</a>
+  <a class="amigo-sms" href="sms:+14244506387">💬 Text us instead</a>
 </div>
 
 <script>
