@@ -279,12 +279,14 @@
 })();
 
 // Brand favicon + spin, loaded site-wide: point the tab icon at the brand
-// favicon.svg and start the spinning-favicon script.
+// favicon PNG and start the spinning-favicon script. The PNG is a real PNG
+// (served by a Pages Function), not an SVG: browsers will not draw an
+// SVG-wrapped image to the spin canvas, so the SVG version never spun.
 (function () {
   var l = document.querySelector('link[rel="icon"]');
   if (!l) { l = document.createElement('link'); l.rel = 'icon'; document.head.appendChild(l); }
-  l.setAttribute('type', 'image/svg+xml');
-  l.setAttribute('href', '/favicon.svg');
+  l.setAttribute('type', 'image/png');
+  l.setAttribute('href', '/favicon-192.png');
   var s = document.createElement('script');
   s.src = '/favicon-spin.js';
   document.head.appendChild(s);
